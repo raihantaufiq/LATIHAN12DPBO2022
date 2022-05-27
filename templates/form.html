@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <title>To Do List</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">WIW</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <br />
+  
+  <div class="container px-md-5 pb-5">
+    <a href="index.php" class="btn btn-warning mb-3">Kembali</a>
+    <h3>Tambah Pasien</h3>
+    <form action="DATA_FORM_ACTION" method="post" class="row">
+        <div class="form-group col-12">
+          <label for="tnik">NIK</label>
+          <input required type="number" class="form-control" name="tnik" value="DATA_NIK">
+        </div>
+        <div class="form-group col-12">
+          <label for="tnama">Nama</label>
+          <input required type="text" class="form-control" name="tnama" value="DATA_NAMA">
+        </div>
+        <div class="form-group col-4">
+          <label for="ttempat">Tempat</label>
+          <input required type="text" class="form-control" name="ttempat" value="DATA_TEMPAT">
+        </div>
+        <div class="form-group col-4">
+          <label for="ttl">Tanggal Lahir</label>
+          <input required type="date" class="form-control" name="ttl" value="DATA_TL">
+        </div>
+        <div class="form-group col-4">
+            <label for="tgender">Gender</label>
+            <br />
+            <div class="form-check form-check-inline">
+                <input required class="form-check-input" type="radio" name="tgender" value="Laki-laki" DATA_GENDER_CHK_LK>
+                <label class="form-check-label" for="tgender_lk">Laki-laki</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input required class="form-check-input" type="radio" name="tgender" value="Perempuan" DATA_GENDER_CHK_PR>
+                <label class="form-check-label" for="tgender_pr">Perempuan</label>
+            </div>
+        </div>
+        <div class="form-group col-12">
+          <label for="temail">Email</label>
+          <input required type="email" class="form-control" name="temail" value="DATA_EMAIL">
+        </div>
+        <div class="form-group col-12">
+          <label for="ttelp">Nomor Telepon</label>
+          <input required type="number" class="form-control" name="ttelp" value="DATA_TELP">
+        </div>
+
+        <div class="py-3">
+            DATA_TOMBOL
+            <input type="reset" value="reset" class="btn btn-secondary">
+        </div>
+    </form>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
